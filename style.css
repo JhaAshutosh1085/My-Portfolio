@@ -1,0 +1,143 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    color: #fff; /* Text color for contrast against background */
+    background:url('background.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover;
+    z-index: -1; /* Ensures the background image covers the entire page */
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Takes up the full viewport height */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color:white; /* White text for better readability */
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+h2{
+    color: #fffefedf;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+nav a {
+    margin: 0 15px;
+    font-size: 1rem;
+    color: #fffefedf;
+    text-decoration: double;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+nav a:hover {
+    color:gold; /* Gold color on hover */
+}
+
+/* Resume Section */
+#resume {
+    margin-top: 20px;
+}
+
+#resume h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.resume-btn {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    .resume-btn {
+        font-size: 1rem;
+    }
+}
+.back-button {
+    position: absolute;
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+}
+
+.back-button button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.back-button button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+
+
+
+.social-media {
+    text-align: center; /* Center text and icons */
+    margin: 20px 0; /* Space around the section */
+}
+
+.social-media h2 {
+    margin-bottom: 15px; /* Space below the heading */
+    font-size: 24px; /* Adjust heading size */
+    color: #000000; /* Change color as needed */
+}
+
+.social-icons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the icons */
+    gap: 20px; /* Space between icons */
+}
+
+.social-icons a img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    transition: transform 0.3s, filter 0.3s; /* Transition effects */
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    filter: brightness(0.8); /* Darken the image on hover */
+}
+
